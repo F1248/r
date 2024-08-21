@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <script>
         open(new URLSearchParams(location.search).get("d"), "_self");
-        history.back();
+        setTimeout(() => window.history.back(), 1000);
     </script>
 </head>
 </html>
