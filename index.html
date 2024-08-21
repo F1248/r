@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <script>
-        open(new URLSearchParams(location.search).get("d"));
+        open(new URLSearchParams(location.search).get("d"), "_self");
         setTimeout(() => window.history.back(), 1000);
     </script>
 </head>
