@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8"/>
     <script>
-        location.replace(new URLSearchParams(location.search).get("d"));
+        open(new URLSearchParams(location.search).get("d"));
+        history.go(-1);
     </script>
 </head>
 </html>
