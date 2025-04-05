@@ -4,7 +4,7 @@
 	<meta charset="UTF-8"/>
 	<script>
 		open(new URLSearchParams(location.search).get("d"), "_self");
-		setTimeout(() => history.back(), 1000);
+		setTimeout(() => onfocus = () => history.back());
 	</script>
 </head>
 </html>
